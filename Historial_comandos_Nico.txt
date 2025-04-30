@@ -46,3 +46,17 @@ git push
 history -a
 cp ~/bash_history ./Historial_comandos_Nico.txt
 $HOME/.bash_history
+cp ~/.bash_history ./Historial_comandos_Nico.txt
+git add Historial_comandos_Nico.txt
+git commit -m "ADD: Historial Comandos de Nico"
+git push
+cat << EOF > README.md
+Alumno: Nicolás Moranzoni
+Division: 315
+Turno: Noche
+EOF
+
+git add README.md datos_usuario.txt
+git commit -m "Modificacion nombre de alumno en README.md"
+git push
+history -a
